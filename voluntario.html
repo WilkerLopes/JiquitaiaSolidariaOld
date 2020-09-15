@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Jiquitaia Solidária</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="theme-color" content="#4F4BA6">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#4F4BA6">
+  <meta name="msapplication-navbutton-color" content="#4F4BA6">
+  <meta charset="utf-8">
+  <meta name="Description" content="A plataforma que conecta voluntários e projetos sociais">
+  <link rel="shortcut icon" href="assets/favicon-64x.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/6035/grid.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/dash.css">
+  <link rel="stylesheet" type="text/css" href="css/bundler.css">
+  <link rel="stylesheet" type="text/css" href="css/animationS.css">
+  <!-- Preload css -->
+  <style>
+    .pre-load {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #fafaff;
+      z-index: 999999
+    }
+    
+    .load {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+
+<body>
+
+   <!--Preload div start   -->
+  <div class="pre-load">
+    <div id="loadFundo" class="load">
+      <div class="erroLogin">
+        <div class="container">
+          <div class="row">
+            <div class="modalbox error col-sm-8 col-md-6 col-lg-5 center animate" style="display: block;">
+              <div class="icon">
+                <span class="glyphicon glyphicon-thumbs-down material-icons">close</span>
+              </div>
+              <!--/.icon-->
+              <h1>Que pena</h1>
+              <p>Tentamos fazer seu login, mas verificamos que você não possui cadastro conosco, cadastre-se no página de doação. Caso tenha, entre em contato.</p>
+              <a href="doacao.html" class="redo btn">Cadastrar-se</a>
+            </div>
+            <!--/.success-->
+          </div>
+        </div>
+      </div>
+
+      <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //Preload -->
+
+
+  <!-- NavBar -->
+  <div class="navbar-fixed">
+    <nav class="nav-wrapper">
+      <div class="nav-wrapper">
+        <div class="container">
+          <a href="#!" class="brand-logo"><img src="assets/favicon-128xxx.png" alt="Jiquitaia Solidária"></a>
+          <a href="#!" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="#!">Voluntário</a></li>
+            <li><a href="doacao.html">Doações</a></li>
+            <li><a href="parceria.html">Seja um parceiro</a></li>
+            <li><a href="contato.html">Sobre Nós</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- SideNav -->
+  <ul id="slide-out" class="sidenav">
+    <li>
+      <div class="user-view">
+        <div class="background">
+          <img src="assets/images/fundo.jpg" alt="background">
+        </div>
+        <a href="#!"><img class="circle" src="assets/favicon-128xx.png" alt="Jiquitaia Solidária"></a>
+        <a href="#!"><span class="white-text name">Jiquitai Solidária</span></a>
+        <a href="#!"><span class="white-text email">jiquitariasolidaria@gmail.com</span>
+        </a>
+      </div>
+    </li>
+    <li><a href="index.html"><i class="material-icons">home</i>Home</a></li>
+    <li><a class="active" href="#!"><i class="material-icons">accessibility_new</i>Voluntário</a></li>
+    <li><a href="doacao.html"><i class="material-icons">redeem</i>Doações</a></li>
+    <li><a href="parceria.html"><i class="material-icons">supervisor_account</i>Seja um parceiro</a></li>
+    <li><a href="contato.html"><i class="material-icons">info</i>Sobre Nós</a></li>
+  </ul>
+
+
+
+  <!-- Page 01 -->
+  <section class="page01">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 m4 s12 ladoPerfil">
+          <div class="background"></div>
+          <div class="perfil"></div>
+          <div class="name">
+            <span class="cardDash__title">NOME</span>
+            <span class="cardDash__price" id="nameU"></span>
+          </div>
+          <div class="email">
+            <span class="cardDash__title">E-mail</span>
+            <span class="cardDash__price" id="emailU"></span>
+          </div>
+          <div class="idade">
+            <span class="cardDash__title">Idade</span>
+            <span class="cardDash__price" id="idadeU"></span>
+          </div>
+        </div>
+
+        <div class="col l9 m8 s12">
+
+
+
+          <div class="row">
+            <div class="cardDash " data-animate-top>
+              <span class="cardDash__title">Suas doações</span>
+              <span class="cardDash__price">15</span>
+            </div>
+            <div class="cardDash " data-animate-top>
+              <span class="cardDash__title">Último valor doado</span>
+              <span  class="cardDash__price lastDonate">250</span>
+            </div>
+
+            <div class="cardDash" data-animate-top>
+              <span class="cardDash__title">total doado</span>
+              <span class="cardDash__price">1500</span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="cardDash  " data-animate-top>
+              <div class="cardDash__header">
+                <span class="cardDash__title cardDash__title--notification">Amor</span>
+                <span class="cardDash__title">Média de doação</span>
+              </div>
+              <div class="graph">
+                <div class="graph__line graph__line--active"></div>
+                <div class="graph__line graph__line--active"></div>
+                <div class="graph__line graph__line--active"></div>
+                <div class="graph__line graph__line--active"></div>
+                <div class="graph__line graph__line--active"></div>
+                <div class="graph__line graph__line--active"></div>
+                <div class="graph__line"></div>
+                <div class="graph__line"></div>
+                <div class="graph__line"></div>
+                <div class="graph__line"></div>
+                <div class="graph__line"></div>
+                <div class="graph__line"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="cardDash cardDash--dark" data-animate-bottom>
+              <div class="cardDash__inner">
+                <div>
+                  <span class="cardDash__title">Sua meta</span>
+                  <span class="cardDash__progess">95%</span>
+                  <span class="cardDash__sub-title">R$950 de R$1000 por mês</span>
+                </div>
+                <div>
+                  <span class="cardDash__title">Mês passado</span>
+                  <span class="cardDash__progess">120%</span>
+                  <span class="cardDash__sub-title">Você particpou de 12 projetos</span>
+                </div>
+                <div>
+                  <span class="cardDash__title">Próximas metas</span>
+                  <span class="cardDash__progess">Doar tempo</span>
+                  <span class="cardDash__sub-title">Deseja fazer mais?
+                    <a href="#" class="cardDash__link">Ente em contato.</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="cardDash cardDash--dark" data-animate-bottom>
+              <div class="cardDash__inner cardCorona">
+                <div>
+                  <span class="cardDash__title red-text">Aviso</span>
+                  <p>
+                    A sua saúde é coisa mais importe que tem. Com o aumento dos casos de Corona Virus no no Brasil e no mundo, é indispensável lavar bem as mão, usar máscaras, evitar contato físico e aglomeração. Saia de casa somente se for algo necessário.
+                  </p>
+                  <span class="cardDash__sub-title">Deseja mais informações?
+                    <a href="https://coronavirus.saude.gov.br" target="_blank" rel="noopener noreferrer" class="cardDash__link">Veja as informações de saúde que o governo preparou</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- //home page about -->
+
+
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+      <div class="container">
+        <h4> Política de Privacidade para<a href='#!'>Jiquitaia Solidária</a></h4>
+ 
+        <p>Olá, aqui vamos te explicar algumas coisas importantes: Informações pessoais relativas a membros, clientes ou visitantes que usem a Jiquitaia Solidária serão tratadas em concordância com a Lei da Proteção de Dados Pessoais de 26 de outubro de
+          1998 (Lei n.º 67/98). A informação pessoal que consta nos formulários pode incluir o seu nome, e-mail, número de telefone, data de nascimento e/ou outros.</p>
+        </br>
+
+        <p>O uso da plataforma Jiquitaia Solidária pressupõe a aceitação desta Política de privacidade. A equipe Jiquitaia Solidária reserva-se ao direito de alterar este acordo sem aviso prévio. Deste modo, recomendamos que consulte a nossa política de
+          privacidade com regularidade de forma a estar sempre atualizado. Sobre os anúncios:</p>
+        </br>
+        <p>Coletamos e utilizamos informações contidas nos anúncios. As informações incluem o seu endereço IP (Internet Protocol), o seu ISP (Internet Service Provider), o browser que utilizou ao visitar o nosso website, o tempo da sua visita e as páginas
+          que visitou dentro do nosso website. Utilizamos cookies para armazenar informação, tais como as suas preferências pessoais quando visita o nosso website. Isto poderá incluir um simples pop-up.</p>
+        </br>
+
+        <p>Em adição também utilizamos publicidade de terceiros no nosso website para suportar os custos de manutenção. Você detém o poder de desligar os seus cookies, nas opções do seu browser, ou efetuando alterações nas ferramentas de programas antivírus,
+          no entanto, isso poderá alterar a forma como interage com o nosso website, ou outros websites. Possuímos ligações com outros sites, os quais, a nosso ver, podem conter informações / ferramentas úteis para os nossos visitantes. A nossa política
+          de privacidade não é aplicada a sites de terceiros, pelo que, caso visite outro site a partir do nosso deverá ler a politica de privacidade do mesmo.</p>
+        </br>
+        <p>Não nos responsabilizamos pela política de privacidade ou conteúdo presente nesses sites. Caso não concorde com as politicas acima, por favor, não continue a navegação no site.</p>
+        </br>
+        <p>Caso encontre algum conteúdo, política ou direito que fira qualquer lei, por favor, entre em contato conosco pelo e-mail: jiquitaiasolidaria@gmail.com.</p>
+        </br>
+        <p>Sobre correspondências:</p>
+        </br>
+        <p>A plataforma Jiquitaia Solidária poderá utilizar seu e-mail para enviar correspondências, atualizações, projetos de iniciativas sociais, bem como para fazer confirmações de doações. Se você não quiser receber e-mails da Jiquitaia Solidária ou
+          de nossos parceiros e aliados, atualize seu Cadastro.</p>
+        </br>
+        <p>Não enviamos e-mails com solicitações de dados confidenciais de clientes, nem solicitamos depósitos em conta corrente. Caso tenha recebido mensagem solicitando informações confidenciais ou com instruções para depositar qualquer quantia em conta
+          corrente, desconsidere.</p>
+        </br>
+        <p>Sobre menores de idade:</p>
+        </br>
+        <p>Os nossos serviços não foram formulados para serem utilizados por indivíduos menores de 18 anos sem a autorização verificada dos responsáveis. </p>
+        </br>
+        <p>Se um dos pais ou um tutor tomar conhecimento de que seu filho menor de 18 anos nos forneceu informações sem o seu consentimento, os pais ou tutores deverão nos contatar, no endereço de e-mail jiquitaiasolidaria@gmail.com.</p>
+        
+
+        </br>
+        <p>Cordialmente JiquitaiaTeam.</p>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Negar</a>
+          <a href="#!" class="modal-close font-light-btn waves-effect btn-color-05 btn">Aceitar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal bottom-sheet">
+    <div class="modal-content">
+      <div class="container">
+        <h4>Direitos Autorais</h4>
+        <p>
+          O site <a href='index.html'>Jiquitaia Solidária</a> usa conteudo aberto de sites de terceiros.
+        </p>
+        <p>
+          Algumas imagens presente no site estão sob o direito de uso da <a href='https://pixabay.com/pt/'>PixaBay</a>, nehuma das imagens utilizadas ferem tais direitos de uso. Acesso o link para mais informações sobre a <a href='https://pixabay.com/pt/service/privacy/'>Polictica de Privacidade </a> da PixaBay.
+        </p>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Negar</a>
+          <a href="#!" class="modal-close font-light-btn waves-effect btn-color-05 btn">Aceitar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- move top -->
+  <div id="btnTop" class=" bx-arrw ">
+    <a class="btn-Top z-depth-3"><i class="material-icons ">arrow_upward</i><i class="material-icons ">arrow_upward</i></a>
+  </div>
+  <!-- site footer -->
+
+  <footer class="page-footer ">
+    <div class="container ">
+      <div class="row ">
+        <div class="col l3 m6 s12 ">
+          <ul class="collection ">
+            <li class="collection-header ">
+              <h5>Páginas</h5>
+            </li>
+            <li class="collection-item "><a href="index.html "><i class="material-icons ">chevron_right</i>Home</a></li>
+            <li class="collection-item "><a href="voluntario.html "><i class="material-icons ">chevron_right</i>Voluntario</a></li>
+            <li class="collection-item "><a href="doacao.html "><i class="material-icons ">chevron_right</i>Doações</a></li>
+            <li class="collection-item "><a href="parceria.html "><i class="material-icons ">chevron_right</i>Seja um parceiro</a></li>
+            <li class="collection-item "><a href="contato.html "><i class="material-icons ">chevron_right</i>Sobre Nós</a></li>
+          </ul>
+        </div>
+        <div class="col l3 m6 s12 ">
+          <ul class="collection ">
+            <li class="collection-header ">
+              <h5>Informações</h5>
+            </li>
+            <li class="collection-item ">
+              <a class="modal-trigger" data-target="modal1"> <i class="material-icons ">chevron_right</i> Política de Privacidade</a>
+            </li>
+            <li class="collection-item ">
+              <a class="modal-trigger" data-target="modal2"> <i class="material-icons ">chevron_right</i> Termos de Serviço</a>
+            </li>
+            <li class="collection-item ">
+              <a href="#!"> <i class="material-icons ">chevron_right</i> Sitemap</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col l3 m6 s12 ">
+          <ul class="collection ">
+            <li class="collection-header ">
+              <h5>Nossas redes</h5>
+            </li>
+           <li class="collection-item "><a href="https://www.facebook.com/jiquitaiasolidaria/ "><i class="fa fa-facebook-square "></i> Facebook</a></li>
+            <li class="collection-item "><a href="https://www.instagram.com/jiquitaiasolidaria/"><i class="fa fa-instagram "></i> Instagram</a></li>
+          </ul>
+        </div>
+        <div class="col l3 m12 s12 center ">
+          <a href="# "><img class="lg-ftr " src="assets/favicon-128xxx.png " alt="Jiquitaia Solidária"></a>
+          <h5>Jiquitaia Solidária</h5>
+          <p class="p-slgn ">Doar amor é o melhor remédio contra o vírus!</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright ">
+      <div class="container ">
+        <div class="row ">
+          <div class="col l6 m6 s12 center "> &copy; 2020 Jiquitaia Solidária.</div>
+          <div class="col l6 m6 s12 center ">Produzido por <a href="contato.html ">JiquitaiaTeam</a></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- //site footer -->
+
+  <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
+  <!-- Materialize -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js "></script>
+  <!-- Script -->
+  <script src="js/script.js "></script>
+  <!-- Mask -->
+  <script src="js/jquery.mask.js "></script>
+  <!-- Custom -->
+  <script>
+    // Auto Login
+    $(document).ready(function() {
+      var nameU = localStorage.getItem("nome");
+      var idadeU = localStorage.getItem("idade");
+      var emailU = localStorage.getItem("email");
+      var danate = localStorage.getItem("donate");
+      if (name != null && name != "" && idade != null && idade != "" && email != null && email != "") {
+        $("#nameU").text(nameU);
+        $("#nameU").text(idadeU);
+        $("#emailU").text(emailU);
+        $(".lastDonate").text(donate);
+        $("#valueDonate").append(donate);
+        $('.pre-load').hide();
+      } else {
+        $(".preloader-wrapper").hide();
+      }
+    });
+  </script>
+</body>
+</html>

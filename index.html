@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Jiquitaia Solidária</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="theme-color" content="#4F4BA6">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#4F4BA6">
+  <meta name="msapplication-navbutton-color" content="#4F4BA6">
+  <meta charset="utf-8">
+  <meta name="Description" content="A plataforma que conecta voluntários e projetos sociais.">
+  <link rel="shortcut icon" href="assets/favicon-64x.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/owl.css">
+  <link rel="stylesheet" type="text/css" href="css/bundler.css">
+  
+  <!-- Preload css -->
+  <style>
+    .pre-load {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #fafaff;
+      z-index: 999999
+    }
+    
+    .load {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+
+<body>
+
+<!--modal corona-->
+
+<div class="modalCorona container red  lighten-2">
+    <div class="row">
+      <div class="col s12">
+      <div class="closeBtn">
+        <i class="material-icons">close</i>
+      </div>
+      <h5 class="title center">Cuide de sua saude!</h5>
+      <p>
+        A sua saúde é coisa mais importe que tem. Com o aumento dos casos de Corona Virus no no Brasil e no mundo, é indispensável lavar bem as mão, usar máscaras, evitar contato físico e aglomeração. Saia de casa somente se for algo necessário. <a href="https://coronavirus.saude.gov.br" target="_blank" rel="noopener noreferrer" class="cardDash__link">Leia mais</a>
+      </p>
+    </div>
+    </div>
+  </div>
+
+<!--//modal corona-->
+
+  <!--Preload div start   -->
+  <div class="pre-load">
+    <div class="load">
+      <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- //Preload -->
+  <!-- NavBar -->
+  <div class="navbar-fixed">
+    <nav class="nav-wrapper">
+      <div class="nav-wrapper">
+        <div class="container">
+          <a href="index.html" class="brand-logo"><img src="assets/favicon-128xxx.png" alt="Jiquitaia Solidária"></a>
+          <a href="#!" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a class="active" href="#!">Home</a></li>
+            <li><a href="voluntario.html">Voluntário</a></li>
+            <li><a href="doacao.html">Doações</a></li>
+            <li><a href="parceria.html">Seja um parceiro</a></li>
+            <li><a href="contato.html">Sobre Nós</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- SideNav -->
+  <ul id="slide-out" class="sidenav">
+    <li>
+      <div class="user-view">
+        <div class="background">
+          <img src="assets/images/fundo.jpg" alt="background">
+        </div>
+        <a href="#!"><img class="circle" src="assets/favicon-128xx.png" alt="Jiquitaia Solidária"></a>
+        <a href="#!"><span class="white-text name">Jiquitaia Solidária</span></a>
+        <a href="#!"><span class="white-text email">jiquitariasolidaria@gmail.com</span>
+        </a>
+      </div>
+    </li>
+    <li><a class="active" href="#!"><i class="material-icons">home</i>Home</a></li>
+    <li><a href="voluntario.html"><i class="material-icons">accessibility_new</i>Voluntário</a></li>
+    <li><a href="doacao.html"><i class="material-icons">redeem</i>Doações</a></li>
+    <li><a href="parceria.html"><i class="material-icons">supervisor_account</i>Seja um parceiro</a></li>
+    <li><a href="contato.html"><i class="material-icons">info</i>Sobre Nós</a></li>
+  </ul>
+
+   <!-- banner section -->
+  <section id="home" class="banner page01">
+    <div id="banner-bg-effect" class="banner-effect"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col l8 m6 s12">
+          <h1 class="title"><strong>Fazendo</strong> a coisa certa, <br>na <strong>hora certa</strong>.</h1>
+          <p>
+            Como meio de contribuir em meio a esse período de Pandemia, idealizamos uma plataforma que onde fosse possível facilitar doações e o voluntariado. A intenção da plataforma é ser um mecanismo em que as pessoas interessadas em coloborar encontrem instituições
+            que precisam de ajuda nesse momento.
+          </p>
+          <div class="mt-5">
+            <a class="btn btn-custon-1 z-depth-0" href="#services">Leia Mais</a>
+            <a class="btn btn-outline btn-flat" href="doacao.html">Nossos Serviços</a>
+          </div>
+        </div>
+        <div class="col l4 m6 s12"><img class="img-banner" src="assets/images/im0.jpeg" alt="A difereça é feita por você!" class="circle "></div>
+      </div>
+      <div class="bx-arrw">
+        <a class="btn-Down"><i class="material-icons">arrow_downward</i><i class="material-icons">arrow_downward</i></a>
+      </div>
+    </div>
+  </section>
+  <!-- //banner section -->
+
+  <!-- home page about -->
+  <section class="w3l-about">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 m7 s12">
+          <h3 class="title">Sobre Nós</h3>
+          <h6>
+            Somos um grupo de jovens sonhadores, de diversos cursos da área de saúde e da área de tecnologia, que buscam fazer a diferença e trazer ajuda para pessoas afetadas pela atual situação de saúde.
+          </h6>
+          <p>
+            Percebemos que muitas pessoas se encontram em situações delicadas a respeito de seus sustentos alimentares e sanitários, isso nos deixou bastante preocupados e, por isso, buscamos por meio de pequenas ações unir pessoas dispostas a ajudar com os que necessitam dessa ajuda!
+          </p>
+          </p>
+        </div>
+        <div class="col l6 m5 s12">
+          <img src="assets/images/im1.jpeg" class="fotoDesenhada" alt="about">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- //home page about -->
+
+  <!--   home page service grids -->
+  <section id="services" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col l12 m12 s12 center">
+          <h4 class="section-title">Conheça a Nossa Solução</h4>
+          <p class="text-center">Uma plataforma para facilitar doações e o voluntariado
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class=" tabsIndex col l4 m6 s12">
+          <div class="center">
+            <div class="icon">
+              <img src="assets/icons/donateTime.svg" alt="Doe tempo">
+            </div>
+            <h4><a href="doacao.html">Doação de Tempo</a></h4>
+            <p>A opção de doação de tempo, é pensada naqueles que não podem contribuir com alimentos, materiais de limpeza ou com dinheiro; mas pode doar seu tempo. Essa é uma grande oportunidade para aquelas pessoas que estejam com boa saúde. Essa vertente
+              foi pensada levando em consideração grupos de riscos, para que este se exponham o menos possível.</p>
+          </div>
+        </div>
+
+        <div class="tabsIndex col l4 m6 s12">
+          <div class="center">
+            <div class="icon">
+              <img src="assets/icons/donateCleaning.svg" alt="Doe Limpeza">
+            </div>
+            <h4><a href="doacao.html">Doação de Material de Limpeza</a></h4>
+            <p>A doação de materiais de limpeza e de higiene é importante para diminuir as chances de contaminação pelo coronavírus, possibilitando a lavagens de mãos de forma adequada, e a limpeza de roupas e outros materiais que possam ser vetor para o
+              vírus.
+            </p>
+          </div>
+        </div>
+
+        <div class="tabsIndex  col l4 m6 s12 ">
+          <div class="center">
+            <div class="icon">
+              <img src="assets/icons/donateMoney.svg" alt="Doe dinheiro">
+            </div>
+            <h4><a href="doacao.html">Doação de Dinheiro</a></h4>
+            <p>A opção de doação de dinheiro é pensada para as pessoas que não podem contribuir com tempo nem com doação de alimentos e materiais de limpeza. Essa é uma forma de doar amor, e dar oportunidades de transformação de vida daquele que recebe.</p>
+          </div>
+        </div>
+
+        <div class="tabsIndex col l4 m6 s12 ">
+          <div class="center">
+            <div class="icon">
+              <img src="assets/icons/pao.svg" alt="Doe alimentos">
+            </div>
+            <h4><a href="doacao.html">Doação de Alimentos</a></h4>
+            <p>Nós entendemos a importância de uma nutrição adequada, principalmente nesse momento que vivemos. Nosso objetivo é que os interessado em colaborar desta forma, tenha acesso a organizações que aceitam doação de alimentos.
+            </p>
+          </div>
+        </div>
+
+        <div class="tabsIndex col l4 m6 s12 ">
+          <div class="center">
+            <div class="icon">
+              <img src="assets/icons/caridade.svg" alt="parcerias">
+            </div>
+            <h4><a href="doacao.html">Instituições Parceiras</a></h4>
+            <p>São instituições que ajudam no combate ao coronavírus e estão necessitando de doações e voluntários.</p>
+          </div>
+        </div>
+
+        <div class="tabsIndex col l4 m6 s12 ">
+          <div class="center">
+            <div class="icon">
+              <img src="assets/icons/voluntario.svg" alt="voluntarios">
+            </div>
+            <h4><a href="doacao.html">Voluntariado</a></h4>
+            <p>Voluntários podem ajudar de inúmeras com o projeto, seja no transporte de compras para grupos de risco, ou no transporte de doações para instituições parceiras.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- //home page service grids -->
+
+   <!-- testimonials section -->
+  <section id="slider" class="testimonials">
+    <div class="container">
+      <div class="row">
+        <div class="col l12 m12 s12 center">
+          <h4 class="section-title">O que estão falando sobre nós</h4>
+          <p class="text-center">Leia algumas citacões sobre o Projeto Jiquitaia Solidária
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l12">
+          <div class="owl-carousel">
+            <div class="item">
+              <div class="w3l-customers-7">
+                <div class="customers_sur">
+                  <div class="customers-left_sur">
+                    <div class="customers_grid">
+                      <div class="custo-img-res">
+                        <img src="assets/images/cit1.jpeg" alt="Person 01" class="">
+                      </div>
+                      <div class="ratings my-4 my-4">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                      </div>
+                      <p>Jiquitaia é um projeto com um time excepcional de pessoas que pensam no bem da sociedade, com uma ferramenta pioneira para atrair voluntários em torno de uma causa social.</p>
+                      <div class="customers-bottom_sur">
+                        <div class="custo_grid">
+                          <h5>Marco Antônio Linhares</h5>
+                          <span>CEO VOIX</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="w3l-customers-7">
+                <div class="customers_sur">
+                  <div class="customers-left_sur">
+                    <div class="customers_grid">
+                      <div class="custo-img-res">
+                        <img src="assets/images/marcio-lins_optimized.jpeg" alt="" class="img-fluid">
+                      </div>
+                      <div class="ratings my-4">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                      </div>
+                      <p>Jiquitaia Solidária é um projeto inovador no seu propósito, que chega ao mercado na hora certa, com um time jovem e diligente. Uma plataforma multicanal que vai incentivar e unir esforços em prol dos mais necessitados.</p>
+                      <div class="customers-bottom_sur">
+                        <div class="custo_grid">
+                          <h5>Márcio Lins</h5>
+                          <span>CEO da RedMaxx Consultoria</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="w3l-customers-7">
+                <div class="customers_sur">
+                  <div class="customers-left_sur">
+                    <div class="customers_grid">
+                      <div class="custo-img-res">
+                        <img src="assets/images/gabriel.jpeg" alt="" class="img-fluid">
+                      </div>
+                      <div class="ratings my-4">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                      </div>
+                      <p>Jiquitaia é um projeto na qual facilita e melhora a vida de todos que querem ajudar o próximo, facilita no processo de escolha e no processo de ajudar o próximo, tenho fé de que vai alcançar grandes patamares</p>
+                      <div class="customers-bottom_sur">
+                        <div class="custo_grid">
+                          <h5>Gabriel Câmara</h5>
+                          <span>CEO Vailem</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="w3l-customers-7">
+                <div class="customers_sur">
+                  <div class="customers-left_sur">
+                    <div class="customers_grid">
+                      <div class="custo-img-res">
+                        <img src="assets/images/oi.jpeg" alt="" class="img-fluid">
+                      </div>
+                      <div class="ratings my-4">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                      </div>
+                      <p>Amei o projeto! Um projeto lindo com um grande potencial! Espero que alcance nível nacional.</p>
+                      <div class="customers-bottom_sur">
+                        <div class="custo_grid">
+                          <h5>Mariana Saldanha</h5>
+                          <span>Diretora Nacional de Saúde Pública</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--//testimonials section -->
+
+  <!-- stats section -->
+  <section id="stats" class="stats">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 m6 s12">
+          <h2 class="left-title">Alguns fatos reais sobre o Jiquitaia Solidária.</h2>
+          <p>Dados, números, curiosidades sobre o projeto Jiquitaia Solidária.
+          </p>
+        </div>
+        <div class="col l6 m6 s12">
+          <div class="row">
+            <div class="col l4 center">
+              <i class="material-icons">folder_shared</i>
+              <p class="value">3</p>
+              <p class="title">Projetos Parceiros</p>
+            </div>
+            <div class="col l4 center">
+              <i class="material-icons">supervisor_account</i>
+              <p class="value">336</p>
+              <p class="title ">Seguidores</p>
+            </div>
+            <div class="col l4 center">
+              <i class="material-icons">pan_tool</i>
+              <p class="value">10</p>
+              <p class="title ">Voluntários</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- //stats section -->
+
+  <section class="contact-form">
+    <div class="container">
+      <div class="row">
+        <div class="col l12 m12 s12 center">
+          <h4 class="section-title">Fale Conosco</h4>
+        </div>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col l6 s12">
+                <input id="nome" type="text" class="validate">
+                <label for="nome">Nome</label>
+              </div>
+              <div class="input-field col l6 s12">
+                <input id="assunto" type="text" class="validate">
+                <label for="assunto">Assunto</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate">
+                <label for="email">E-mail</label>
+              </div>
+              <div class="input-field col s12">
+                <textarea id="textarea1" class="materialize-textarea textarea" placeholder="Digite sua mensagem aqui..."></textarea>
+                <label for="textarea1">Mensagem</label>
+              </div>
+            </div>
+            <div class="col l12 m12 s12 input-field center">
+              <a href="#!" class="clickSend anmsend waves-effect waves-light btn"> Enviar </a>
+            </div>
+          </form>
+        </div>
+      </div>
+  </section>
+   <!-- Modal Structure -->
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+      <div class="container">
+        <h4><a href='#!'>Jiquitaia Solidária</a></h4>
+        <p>Política de Privacidade</p>
+        </br>
+        <p>Olá, aqui vamos te explicar algumas coisas importantes: Informações pessoais relativas a membros, clientes ou visitantes que usem a Jiquitaia Solidária serão tratadas em concordância com a Lei da Proteção de Dados Pessoais de 26 de outubro de
+          1998 (Lei n.º 67/98). A informação pessoal que consta nos formulários pode incluir o seu nome, e-mail, número de telefone, data de nascimento e/ou outros.</p>
+        </br>
+
+        <p>O uso da plataforma Jiquitaia Solidária pressupõe a aceitação desta Política de privacidade. A equipe Jiquitaia Solidária reserva-se ao direito de alterar este acordo sem aviso prévio. Deste modo, recomendamos que consulte a nossa política de
+          privacidade com regularidade de forma a estar sempre atualizado. Sobre os anúncios:</p>
+        </br>
+        <p>Coletamos e utilizamos informações contidas nos anúncios. As informações incluem o seu endereço IP (Internet Protocol), o seu ISP (Internet Service Provider), o browser que utilizou ao visitar o nosso website, o tempo da sua visita e as páginas
+          que visitou dentro do nosso website. Utilizamos cookies para armazenar informação, tais como as suas preferências pessoais quando visita o nosso website. Isto poderá incluir um simples pop-up.</p>
+        </br>
+        <p>Em adição também utilizamos publicidade de terceiros no nosso website para suportar os custos de manutenção. Você detém o poder de desligar os seus cookies, nas opções do seu browser, ou efetuando alterações nas ferramentas de programas antivírus,
+          no entanto, isso poderá alterar a forma como interage com o nosso website, ou outros websites. Possuímos ligações com outros sites, os quais, a nosso ver, podem conter informações / ferramentas úteis para os nossos visitantes. A nossa política
+          de privacidade não é aplicada a sites de terceiros, pelo que, caso visite outro site a partir do nosso deverá ler a politica de privacidade do mesmo.</p>
+        </br>
+        <p>Não nos responsabilizamos pela política de privacidade ou conteúdo presente nesses sites. Caso não concorde com as politicas acima, por favor, não continue a navegação no site.</p>
+        </br>
+        <p>Caso encontre algum conteúdo, política ou direito que fira qualquer lei, por favor, entre em contato conosco pelo e-mail: jiquitaiasolidaria@gmail.com.</p>
+        </br>
+        <p>Sobre correspondências:</p>
+        </br>
+        <p>A plataforma Jiquitaia Solidária poderá utilizar seu e-mail para enviar correspondências, atualizações, projetos de iniciativas sociais, bem como para fazer confirmações de doações. Se você não quiser receber e-mails da Jiquitaia Solidária ou
+          de nossos parceiros e aliados, atualize seu Cadastro.</p>
+        </br>
+        <p>Não enviamos e-mails com solicitações de dados confidenciais de clientes, nem solicitamos depósitos em conta corrente. Caso tenha recebido mensagem solicitando informações confidenciais ou com instruções para depositar qualquer quantia em conta
+          corrente, desconsidere.</p>
+        </br>
+        <p>Sobre menores de idade:</p>
+        </br>
+        <p>Os nossos serviços não foram formulados para serem utilizados por indivíduos menores de 18 anos sem a autorização verificada dos responsáveis. </p>
+        </br>
+        <p>Se um dos pais ou um tutor tomar conhecimento de que seu filho menor de 18 anos nos forneceu informações sem o seu consentimento, os pais ou tutores deverão nos contatar, no endereço de e-mail jiquitaiasolidaria@gmail.com.</p>
+        </br>
+        <p>Atenciosamente, equipe Jiquitaia Solidária.</p>
+        </br>
+        <p>Cordialmente JiquitaiaTeam.</p>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Negar</a>
+          <a href="#!" class="modal-close font-light-btn waves-effect btn-color-05 btn">Aceitar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal bottom-sheet">
+    <div class="modal-content">
+      <div class="container">
+        <h4>Direitos Autorais</h4>
+        <p>
+          O site <a href='http://biologiadigital.net.br/'>Jiquitaia Solidária</a> usa conteudo aberto de sites de terceiros.
+        </p>
+        <p>
+          Algumas imagens presente no site estão sob o direito de uso da <a href='https://pixabay.com/pt/'>PixaBay</a>, nehuma das imagens utilizadas ferem tais direitos de uso. Acesso o link para mais informações sobre a <a href='https://pixabay.com/pt/service/privacy/'>Política de Privacidade </a> da PixaBay.
+        </p>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Negar</a>
+          <a href="#!" class="modal-close font-light-btn waves-effect btn-color-05 btn">Aceitar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- move top -->
+  <div id="btnTop" class=" bx-arrw ">
+    <a class="btn-Top z-depth-3"><i class="material-icons ">arrow_upward</i><i class="material-icons ">arrow_upward</i></a>
+  </div>
+  <!-- //move top -->
+  <!-- site footer -->
+
+  <footer class="page-footer ">
+    <div class="container ">
+      <div class="row ">
+        <div class="col l3 m6 s12 ">
+          <ul class="collection ">
+            <li class="collection-header">
+              <h5>Páginas</h5>
+            </li>
+            <li class="collection-item "><a href="index.html "><i class="material-icons ">chevron_right</i>Home</a></li>
+            <li class="collection-item "><a href="voluntario.html "><i class="material-icons ">chevron_right</i>Voluntário</a></li>
+            <li class="collection-item "><a href="doacao.html "><i class="material-icons ">chevron_right</i>Doações</a></li>
+            <li class="collection-item "><a href="parceria.html "><i class="material-icons ">chevron_right</i>Seja um parceiro</a></li>
+            <li class="collection-item "><a href="contato.html "><i class="material-icons ">chevron_right</i>Sobre Nós</a></li>
+          </ul>
+        </div>
+        <div class="col l3 m6 s12 ">
+          <ul class="collection ">
+            <li class="collection-header ">
+              <h5>Informações</h5>
+            </li>
+            <li class="collection-item ">
+              <a class="modal-trigger" data-target="modal1"> <i class="material-icons ">chevron_right</i> Política de Privacidade</a>
+            </li>
+            <li class="collection-item ">
+              <a class="modal-trigger" data-target="modal2"> <i class="material-icons ">chevron_right</i> Termos de Serviço</a>
+            </li>
+            <li class="collection-item ">
+              <a href="#!"> <i class="material-icons ">chevron_right</i> Sitemap</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col l3 m6 s12 ">
+          <ul class="collection ">
+            <li class="collection-header ">
+              <h5>Nossas redes</h5>
+            </li>
+            <li class="collection-item "><a href="https://www.facebook.com/jiquitaiasolidaria/ "><i class="fa fa-facebook-square "></i> Facebook</a></li>
+            <li class="collection-item "><a href="https://www.instagram.com/jiquitaiasolidaria/"><i class="fa fa-instagram "></i> Instagram</a></li>
+          </ul>
+        </div>
+        <div class="col l3 m12 s12 center ">
+          <a href="# "><img class="lg-ftr " src="assets/favicon-128xxx.png " alt="Jiquitaia Solidária"></a>
+          <h5>Jiquitaia Solidária</h5>
+          <p class="p-slgn ">Doar amor é o melhor remédio contra o vírus!</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright ">
+      <div class="container ">
+        <div class="row ">
+          <div class="col l6 m6 s12 center "> &copy; 2020 Jiquitaia Solidária.</div>
+          <div class="col l6 m6 s12 center ">Produzido por <a href="contato.html ">JiquitaiaTeam</a></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- //site footer -->
+
+   <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
+  <!-- Materialize -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js "></script>
+  <!-- owl carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js "></script>
+  <!-- particles -->
+  <script src="js/particles.min.js "></script>
+  <!-- Script -->
+  <script src="js/script.js "></script>
+  <!-- Custom -->
+  <script>
+    //Botão enviar
+    var spinner = "<span class='spinner'></span>";
+    $('.clickSend').click(function() {
+      var emailSend = $("#emailC").val();
+      $(".anmsend").toggleClass('loading').html(spinner);
+      setTimeout(() => {
+        $("#emailC").trigger("reset");
+        $(".anmsend").toggleClass('loading');
+        $(".anmsend").toggleClass('btnW100 resetBtn ').html("Enviado com sucesso");
+      }, 1500);
+    });
+    //auto complete
+    var alturaW = $(".banner").height();
+    $(".banner-effect").css({"height":alturaW});
+
+    //btn close corona
+    $(".closeBtn").click(()=>{
+      $(".modalCorona").hide("600");
+    })
+  </script>
+</body>
+
+</html>

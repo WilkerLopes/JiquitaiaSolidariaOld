@@ -1,0 +1,318 @@
+.cartaoAnimate .field-container input {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.cartaoAnimate .field-container {
+  position: relative;
+}
+
+.cartaoAnimate label {
+  padding-bottom: 5px;
+  font-size: 13px;
+}
+
+.cartaoAnimate input {
+  margin-top: 3px;
+  padding: 15px;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #dcdcdc;
+}
+
+.cartaoAnimate .ccicon {
+  height: 38px;
+  position: absolute;
+  right: 6px;
+  top: calc(50% - 17px);
+  width: 60px;
+}
+
+
+/* CREDIT CARD IMAGE STYLING */
+
+.cartaoAnimate .preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+.cartaoAnimate .container {
+  width: 100%;
+  max-width: 400px;
+  max-height: 251px;
+  height: 54vw;
+  padding: 20px;
+}
+
+.cartaoAnimate #ccsingle {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+}
+
+.cartaoAnimate #ccsingle svg {
+  width: 100px;
+  max-height: 60px;
+}
+
+.cartaoAnimate .creditcard svg#cardfront,
+.cartaoAnimate .creditcard svg#cardback {
+  width: 100%;
+  box-shadow: 0 5px 30px 0 rgba(14, 42, 90, 0.55);
+  border-radius: 22px;
+}
+
+.cartaoAnimate #generatecard {
+  cursor: pointer;
+  float: right;
+  font-size: 12px;
+  color: #fff;
+  padding: 2px 4px;
+  background-color: #909090;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+
+/* CHANGEABLE CARD ELEMENTS */
+
+.cartaoAnimate .creditcard .lightcolor,
+.cartaoAnimate .creditcard .darkcolor {
+  -webkit-transition: fill .5s;
+  transition: fill .5s;
+}
+
+.cartaoAnimate .creditcard .lightblue {
+  fill: #03A9F4;
+}
+
+.cartaoAnimate .creditcard .lightbluedark {
+  fill: #0288D1;
+}
+
+.cartaoAnimate .creditcard .red {
+  fill: #ef5350;
+}
+
+.cartaoAnimate .creditcard .reddark {
+  fill: #d32f2f;
+}
+
+.cartaoAnimate .creditcard .purple {
+  fill: #ab47bc;
+}
+
+.cartaoAnimate .creditcard .purpledark {
+  fill: #7b1fa2;
+}
+
+.cartaoAnimate .creditcard .cyan {
+  fill: #26c6da;
+}
+
+.cartaoAnimate .creditcard .cyandark {
+  fill: #0097a7;
+}
+
+.cartaoAnimate .creditcard .green {
+  fill: #66bb6a;
+}
+
+.cartaoAnimate .creditcard .greendark {
+  fill: #388e3c;
+}
+
+.cartaoAnimate .creditcard .lime {
+  fill: #d4e157;
+}
+
+.cartaoAnimate .creditcard .limedark {
+  fill: #afb42b;
+}
+
+.cartaoAnimate .creditcard .yellow {
+  fill: #ffeb3b;
+}
+
+.cartaoAnimate .creditcard .yellowdark {
+  fill: #f9a825;
+}
+
+.cartaoAnimate .creditcard .orange {
+  fill: #ff9800;
+}
+
+.cartaoAnimate .creditcard .orangedark {
+  fill: #ef6c00;
+}
+
+.cartaoAnimate .creditcard .grey {
+  fill: #bdbdbd;
+}
+
+.cartaoAnimate .creditcard .greydark {
+  fill: #616161;
+}
+
+
+/* FRONT OF CARD */
+
+.cartaoAnimate #svgname {
+  text-transform: uppercase;
+}
+
+.cartaoAnimate #cardfront .st2 {
+  fill: #FFFFFF;
+}
+
+.cartaoAnimate #cardfront .st3 {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 600;
+}
+
+.cartaoAnimate #cardfront .st4 {
+  font-size: 54.7817px;
+}
+
+.cartaoAnimate #cardfront .st5 {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400;
+}
+
+.cartaoAnimate #cardfront .st6 {
+  font-size: 33.1112px;
+}
+
+.cartaoAnimate #cardfront .st7 {
+  opacity: 0.6;
+  fill: #FFFFFF;
+}
+
+.cartaoAnimate #cardfront .st8 {
+  font-size: 24px;
+}
+
+.cartaoAnimate #cardfront .st9 {
+  font-size: 36.5498px;
+}
+
+.cartaoAnimate #cardfront .st10 {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 300;
+}
+
+.cartaoAnimate #cardfront .st11 {
+  font-size: 16.1716px;
+}
+
+.cartaoAnimate #cardfront .st12 {
+  fill: #4C4C4C;
+}
+
+
+/* BACK OF CARD */
+
+.cartaoAnimate #cardback .st0 {
+  fill: none;
+  stroke: #0F0F0F;
+  stroke-miterlimit: 10;
+}
+
+.cartaoAnimate #cardback .st2 {
+  fill: #111111;
+}
+
+.cartaoAnimate #cardback .st3 {
+  fill: #F2F2F2;
+}
+
+.cartaoAnimate #cardback .st4 {
+  fill: #D8D2DB;
+}
+
+.cartaoAnimate #cardback .st5 {
+  fill: #C4C4C4;
+}
+
+.cartaoAnimate #cardback .st6 {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400;
+}
+
+.cartaoAnimate #cardback .st7 {
+  font-size: 27px;
+}
+
+.cartaoAnimate #cardback .st8 {
+  opacity: 0.6;
+}
+
+.cartaoAnimate #cardback .st9 {
+  fill: #FFFFFF;
+}
+
+.cartaoAnimate #cardback .st10 {
+  font-size: 24px;
+}
+
+.cartaoAnimate #cardback .st11 {
+  fill: #EAEAEA;
+}
+
+.cartaoAnimate #cardback .st12 {
+  font-family: 'Rock Salt', cursive;
+}
+
+.cartaoAnimate #cardback .st13 {
+  font-size: 37.769px;
+}
+
+
+/* FLIP ANIMATION */
+
+.cartaoAnimate .container {
+  perspective: 1000px;
+}
+
+.cartaoAnimate .creditcard {
+  width: 100%;
+  max-width: 400px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transition: -webkit-transform 0.6s;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+  cursor: pointer;
+}
+
+.cartaoAnimate .creditcard .front,
+.cartaoAnimate .creditcard .back {
+  position: absolute;
+  width: 100%;
+  max-width: 400px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  color: #47525d;
+}
+
+.cartaoAnimate .creditcard .back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.cartaoAnimate .creditcard.flipped {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+
+/* 
+Code by codepen
+https://codepen.io/quinlo/pen/YONMEa
+*/
